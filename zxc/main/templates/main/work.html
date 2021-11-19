@@ -1,0 +1,43 @@
+{% extends 'main/base.html' %}
+{% block title %}Work{% endblock %}
+{% block content %}
+		<div id="fh5co-main">
+
+			<div class="fh5co-narrow-content">
+				<div class="row">
+
+					<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+						<figure class="text-center">
+							<img src="{{ post.image }}" alt="{{ post.name }}" class="img-responsive">
+						</figure>
+					</div>
+					
+					<div class="col-md-8 col-md-offset-2 animate-box" data-animate-effect="fadeInLeft">
+						
+						<div class="col-md-9 col-md-push-3">
+							<h1>W{{ post.name }}</h1>
+							<p>
+								{{ post.description }}
+							</p>
+						</div>
+
+						<div class="col-md-3 col-md-pull-9 fh5co-services">
+							<h3>Services</h3>
+							<ul>
+								<li>Web Design</li>
+								<li>e-Commerce</li>
+								<li>Logo &amp; Branding</li>
+								<li>Packaging</li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+
+
+
+			</div>
+		</div>
+	</div>
+
+{% endblock %}
